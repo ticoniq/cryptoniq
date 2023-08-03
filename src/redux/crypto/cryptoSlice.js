@@ -64,7 +64,7 @@ export const fetchCoins = createAsyncThunk(
       const response = await axios.request(options);
       return response.data;
     } catch (error) {
-      return thunkAPI.rejectWithValue('Something went wrong');
+      return thunkAPI.rejectWithValue('Something went wrong!');
     }
   },
 );
