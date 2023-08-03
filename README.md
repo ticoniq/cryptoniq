@@ -53,7 +53,7 @@
 <a href="https://cryptoniq-4ns47mpeg-ticoniq.vercel.app/"> Live 🚀</a>
 
 ## 🚀 Live Demo <a name="live-demo"></a>
-<a href="https://www.loom.com/share/4717484925ef440a8299b625a53583a7?sid=b727f388-eec1-4c9c-a849-ab70f2b3b578"> Video presentation 🚀</a>
+<!-- <a href="https://www.loom.com/share/4717484925ef440a8299b625a53583a7?sid=b727f388-eec1-4c9c-a849-ab70f2b3b578"> Video presentation 🚀</a> -->
 
 <!-- GETTING STARTED -->
 
