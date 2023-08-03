@@ -36,11 +36,11 @@ function Crypto() {
     <>
       { selectedCoin && (
         <>
-          <div className="bg-brightBlueSupDark py-2 px-6 uppercase  font-bold sticky top-16 z-20">
+          <div className="bg-brightBlueSupDark dark:bg-newDarkRed py-2 px-6 uppercase  font-bold sticky top-16 z-20">
             <p>Stats By Coin</p>
           </div>
           <div
-            className="bg-brightBlue mx-auto p-5 w-full flex flex-row justify-around items-center"
+            className="bg-brightBlue dark:bg-newLightRed mx-auto p-5 w-full flex flex-row justify-around items-center"
           >
             <img src={selectedCoin.iconUrl} alt="Bitcoin" className="w-28 py-3 mx-auto first:m-0" />
             <div className="">
@@ -53,12 +53,12 @@ function Crypto() {
               <p className="font-bold text-lg text-end">{millify(selectedCoin.price)}</p>
             </div>
           </div>
-          <div className="sticky top-16 z-20 text-xl bg-brightBlueSupDark py-2 px-6 uppercase  font-bold">
+          <div className="sticky top-16 z-20 text-xl bg-brightBlueSupDark dark:bg-newDarkRed py-2 px-6 uppercase  font-bold">
             <span>{ selectedCoin.name }</span>
             <span> Live Details</span>
           </div>
           <div className="flex flex-col w-full">
-            <div className="odd:bg-brightBlueSupLight even:bg-brightBluedDark px-5 py-10 flex flex-row justify-between items-center">
+            <div className="bg-brightBlueSupLight dark:bg-newRed px-5 py-10 flex flex-row justify-between items-center">
               <p>{selectedCoin.description}</p>
             </div>
             <Card title="Coin Rank" details={selectedCoin.rank.toString()} />
