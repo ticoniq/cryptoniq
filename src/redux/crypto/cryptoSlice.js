@@ -1,7 +1,7 @@
 /* eslint-disable import/no-extraneous-dependencies */
 // eslint-disable-next-line import/no-extraneous-dependencies
 import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
-import axios from 'axios';
+// import axios from 'axios';
 
 const initialState = {
   cryptoData: [],
@@ -9,18 +9,9 @@ const initialState = {
   selectedCoin: null,
 };
 
+const url = 'https://coinranking1.p.rapidapi.com/coins?referenceCurrencyUuid=yhjMzLPhuIDl&timePeriod=24h&tiers%5B0%5D=1&orderBy=marketCap&orderDirection=desc&limit=50&offset=0';
 const options = {
   method: 'GET',
-  url: 'https://coinranking1.p.rapidapi.com/coins',
-  params: {
-    referenceCurrencyUuid: 'yhjMzLPhuIDl',
-    timePeriod: '24h',
-    'tiers[0]': '1',
-    orderBy: 'marketCap',
-    orderDirection: 'desc',
-    limit: '18',
-    offset: '0',
-  },
   headers: {
     'X-RapidAPI-Key': 'd151e55606msheb247bbe0459faep193018jsn1d746aada157',
     'X-RapidAPI-Host': 'coinranking1.p.rapidapi.com',
@@ -49,8 +40,8 @@ export const fetchSingleCoin = createAsyncThunk(
   'coin/fetchSingleCoin',
   async (uuid, thunkAPI) => {
     try {
-      const response = await axios.get(`https://coinranking1.p.rapidapi.com/coin/${uuid}`, options);
-      return response.data;
+      const response = await fetch(`https://coinranking1.p.rapidapi.com/coin/${uuid}`, options);
+      return response.json();
     } catch (error) {
       return thunkAPI.rejectWithValue('Something went wrong');
     }
@@ -61,8 +52,8 @@ export const fetchCoins = createAsyncThunk(
   'coin/fetchCoins',
   async (thunkAPI) => {
     try {
-      const response = await axios.request(options);
-      return response.data;
+      const response = await fetch(url, options);
+      return response.json();
     } catch (error) {
       return thunkAPI.rejectWithValue('Something went wrong');
     }

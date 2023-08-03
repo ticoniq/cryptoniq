@@ -9,6 +9,8 @@
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "chart.js": "^4.3.2",
+    "enzyme": "^3.11.0",
+    "jest-mock": "^29.6.2",
     "luxon": "^3.3.0",
     "millify": "^6.1.0",
     "moment": "^2.29.4",
