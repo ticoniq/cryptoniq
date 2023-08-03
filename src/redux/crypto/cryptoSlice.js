@@ -18,7 +18,7 @@ const options = {
     'tiers[0]': '1',
     orderBy: 'marketCap',
     orderDirection: 'desc',
-    limit: '18',
+    limit: '50',
     offset: '0',
   },
   headers: {
