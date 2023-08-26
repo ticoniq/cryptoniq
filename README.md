@@ -163,6 +163,7 @@ Feel free to check the [issues page](../../issues/).
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
 > I would like to thank the Microverse community for their support and guidance throughout this project. Special thanks to my peers and mentors for their constructive feedback and advice.
+> and would also like to acknowledge and give credit to <a href="https://www.behance.net/sakwadesignstudio">Nelson Sakwa</a> on behance for the Original design and Microverse for providing the documentation.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
